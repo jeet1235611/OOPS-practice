@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+#include "class.cpp"
+
+int main() {
+	//Create objects statically.
+	Student s1;
+	Student s2;
+
+	Student s3, s4, s5;
+
+	//s1.age = 24;
+	s1.rollNumber = 101;
+
+	cout << "S1 age : " << s1.getAge() << endl;
+	cout << "S1 Roll Number :" << s1.rollNumber << endl;
+
+	s1.display();
+	s2.display();
+
+	//s2.age = 30;
+	
+	//Create objects dynamically.
+	Student *s6 = new Student;
+	//(*s6).age = 23;
+	(*s6).display();
+
+	cout << "s6 age : " << s6 -> getAge() << endl;
+
+	//s6 -> ag = 23;
+	s6 -> rollNumber = 104;
+	s6 -> display();
+}
