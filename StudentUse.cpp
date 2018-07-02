@@ -31,3 +31,4 @@ int main() {
 	s6 -> rollNumber = 104;
 	s6 -> display();
 }
+vv
