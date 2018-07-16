@@ -12,6 +12,6 @@ int main() {
 	s2.display();
 	s3.display();
 	*/
-
-	cout << s1.getAge(100) << endl;
+	s1.setRollNumber(100);
+	cout << s1.getRollNumber()<< endl;
 }
