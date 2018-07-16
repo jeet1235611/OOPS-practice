@@ -7,7 +7,11 @@ int main() {
 	Student s1, s2;
 	Student s3;
 
+	/*
 	s1.display();
 	s2.display();
 	s3.display();
+	*/
+
+	cout << s1.getAge(100) << endl;
 }

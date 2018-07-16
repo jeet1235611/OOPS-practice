@@ -6,8 +6,10 @@ class Student{
 	int rollNumber;
 
 	public:
-	void display() {
-		cout << "Age = " << age << endl;
-		cout << "Roll Number = " << rollNumber << endl;
+	int getAge(int rollNumber) {
+		return rollNumber;
+
+		//cout << "Age = " << age << endl;
+		//cout << "Roll Number = " << rollNumber << endl;
 	}
 };
