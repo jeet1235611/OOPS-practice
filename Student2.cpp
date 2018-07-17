@@ -13,6 +13,12 @@ class Student{
 		cout << "Constructor called ! " << endl;
 	}
 
+	//Parameterised constructor.
+	Student(int r) {
+		cout << "constructor 2 called ! " << endl;
+		rollNumber = r;
+	}
+
 	void display() {
 		cout << age << " " << rollNumber << endl;
 	}
