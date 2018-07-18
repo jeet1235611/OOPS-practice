@@ -20,12 +20,18 @@ class Student{
 		this -> rollNumber = rollNumber;
 	}
 
+
+
 	//Parameterised constructor.
 	Student(int r, int a){
 		cout << "Address of this is " << this << endl;
 		cout << "Constructor 3 called ! " << endl;
 		rollNumber = r;
 		age = a;
+	}
+
+	~Student(){
+		cout << "Destructor called ! " << endl;
 	}
 
 	void display() {
