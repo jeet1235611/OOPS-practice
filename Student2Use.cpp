@@ -72,5 +72,7 @@ int main() {
 	s3 -> display();
 	s1.display();
 
+	delete s3;
+
 	return 0;
 }
