@@ -17,7 +17,7 @@ class Student{
 	//Parameterised constructor.
 	Student(int rollNumber) {
 		cout << "constructor 2 called ! " << endl;
-		//rollNumber = r;
+		this -> rollNumber = rollNumber;
 	}
 
 	//Parameterised constructor.
