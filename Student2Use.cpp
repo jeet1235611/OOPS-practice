@@ -43,5 +43,14 @@ int main() {
 	cout << "S4: " ;
 	s4.display();
 
+	//for dynamic copies.
+	Student *s5 = new Student(*s3);
+	Student *s6 = new Student(s1);
+
+	cout << endl << endl << endl;
+	
+	s5 -> display();
+	s6 -> display();
+
 	return 0;
 }
