@@ -12,15 +12,18 @@ class Student{
 	Student() {
 		cout << "Constructor called ! " << endl;
 	}
+	
 
 	//Parameterised constructor.
-	Student(int r) {
+	Student(int rollNumber) {
 		cout << "constructor 2 called ! " << endl;
-		rollNumber = r;
+		//rollNumber = r;
 	}
 
 	//Parameterised constructor.
 	Student(int r, int a){
+		cout << "Address of this is " << this << endl;
+		cout << "Constructor 3 called ! " << endl;
 		rollNumber = r;
 		age = a;
 	}

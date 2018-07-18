@@ -20,6 +20,7 @@ int main() {
 	s5 -> display();
 
 	Student *s6 = new Student(500, 800);
+	cout << "Address of s6 " << s6 << endl;
 	s6 -> display();
 
 	return 0;
