@@ -19,6 +19,12 @@ class Student{
 		rollNumber = r;
 	}
 
+	//Parameterised constructor.
+	Student(int r, int a){
+		rollNumber = r;
+		age = a;
+	}
+
 	void display() {
 		cout << age << " " << rollNumber << endl;
 	}

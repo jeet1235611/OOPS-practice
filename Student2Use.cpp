@@ -19,5 +19,8 @@ int main() {
 	Student *s5 = new Student(100);
 	s5 -> display();
 
+	Student *s6 = new Student(500, 800);
+	s6 -> display();
+
 	return 0;
 }
