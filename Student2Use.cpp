@@ -27,6 +27,8 @@ int main() {
 
 	*/
 
+	/*
+
 	Student s1(10, 1001);
 	cout << "S1: ";
 	s1.display();
@@ -51,6 +53,16 @@ int main() {
 	
 	s5 -> display();
 	s6 -> display();
+
+	*/
+
+	Student s1(10, 1001);
+	Student s2(20, 2002);
+
+	s1 = s2;
+
+	s1.display();
+	s1.display();
 
 	return 0;
 }
