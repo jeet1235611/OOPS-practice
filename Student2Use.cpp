@@ -59,9 +59,17 @@ int main() {
 	Student s1(10, 1001);
 	Student s2(20, 2002);
 
+	Student *s3 = new Student(23, 99);
+
 	s1 = s2;
+	*s3 = s2;
+	s1 = *s3;
 
 	s1.display();
+	s1.display();
+
+	(*s3).display();
+	s3 -> display();
 	s1.display();
 
 	return 0;
