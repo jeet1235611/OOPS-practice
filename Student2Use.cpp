@@ -2,6 +2,8 @@
 using namespace std;
 #include "Student2.cpp"
 int main() {
+
+	/*
 	Student s1;
 	s1.display();
 
@@ -22,6 +24,16 @@ int main() {
 	Student *s6 = new Student(500, 800);
 	cout << "Address of s6 " << s6 << endl;
 	s6 -> display();
+
+	*/
+
+	Student s1(10, 1001);
+	cout << "S1: ";
+	s1.display();
+
+	Student s2(s1);
+	cout << "S2 : " ;
+	s2.display();
 
 	return 0;
 }
