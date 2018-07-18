@@ -5,7 +5,7 @@ int main() {
 	Student s1;
 	s1.display();
 
-	Student s2;
+	Student s2(20);
 	s2.display();
 
 	Student *s3 = new Student;
