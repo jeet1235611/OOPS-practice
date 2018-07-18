@@ -35,5 +35,13 @@ int main() {
 	cout << "S2 : " ;
 	s2.display();
 
+	Student *s3 = new Student(23, 1010);
+	s3 -> display();
+	cout << endl << endl << endl;
+	
+	Student s4(*s3);
+	cout << "S4: " ;
+	s4.display();
+
 	return 0;
 }
