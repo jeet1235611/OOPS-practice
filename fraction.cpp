@@ -11,4 +11,14 @@ class Fraction{
 		void print(){
 			cout << numerator << "/" << denominator << endl;
 		}
+
+		void add(Fraction f2) {
+			int lcm = denominator * f2.denominator;
+			int x = lcm / denominator;
+			int y = lcm / f2.denominator;
+
+			numerator = x * numerator + y * f2.numerator;
+			//denominator = y * f2.numerator;
+			denominator = lcm;
+		}
 };
