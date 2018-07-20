@@ -3,8 +3,8 @@
 using namespace std;
 #include "fraction.cpp"
 int main() {
-	Fraction f1(10, 2);
-	Fraction f2(15, 4);
+	Fraction f1(10, 20);
+	Fraction f2(30, 40);
 	f1.add(f2);
 	//simplify();
 	f1.print();
