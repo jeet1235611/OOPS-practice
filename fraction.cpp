@@ -20,5 +20,22 @@ class Fraction{
 			numerator = x * numerator + y * f2.numerator;
 			//denominator = y * f2.numerator;
 			denominator = lcm;
+
+			simplify();
 		}
+
+		void simplify() {
+			int minimum = min(numerator, denominator);
+			int gcd = 1;
+			for(int i = 1; i <= minimum; i++){
+				if(numerator % i == 0 && denominator % i == 0){
+					gcd = i;
+				}
+			}
+
+			numerator = numerator / gcd;
+			denominator = denominator / gcd;
+		}
+
+	
 };
