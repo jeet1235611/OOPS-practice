@@ -12,4 +12,6 @@ int main() {
 	name[3] = 'e';
 	Student s2(24, name);
 	s2.display();
+
+	s1.display();
 }
