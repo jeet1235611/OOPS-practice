@@ -2,8 +2,9 @@ class Student {
 	public:
 		int const rollNumber;
 		int age;
+		int &x;
 
-	Student(int r): rollNumber(r) {
+	Student(int r, int age): rollNumber(r), x( age) {
 		//rollNumber = r;
 	}
 
