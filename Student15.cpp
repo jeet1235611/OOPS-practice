@@ -1,8 +1,9 @@
 class Student {
 	int age;
-	char *name;
+	//char *name;
 
 	public:
+	char *name;
 	Student(int age, char *name){
 		this -> age = age;
 		//Shallow Copy.
