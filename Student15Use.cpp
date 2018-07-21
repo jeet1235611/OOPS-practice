@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+#include <string.h>
 using namespace std;
 
 #include "Student15.cpp"
@@ -12,6 +14,9 @@ int main() {
 	name[3] = 'e';
 	Student s2(24, name);
 	s2.display();
+
+	//this -> name = new char[strlen(name) + 1];
+	//strcpy(this -> name, name);
 
 	s1.display();
 }

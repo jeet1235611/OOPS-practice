@@ -5,7 +5,13 @@ class Student {
 	public:
 	Student(int age, char *name){
 		this -> age = age;
-		this -> name = name;
+		//Shallow Copy.
+
+		//this -> name = name;
+
+		//Deep Copy.
+		this -> name = new char[strlen(name) + 1];
+		strcpy(this -> name, name);
 
 	}
 
