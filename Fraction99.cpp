@@ -15,11 +15,11 @@ class Fraction {
 			this -> denominator = denominator;
 		}
 
-		int getNumerator() {
+		int getNumerator()const {
 			return numerator;
 		}
 
-		int getDenominator() {
+		int getDenominator()const {
 			return denominator;
 		}
 
@@ -31,7 +31,7 @@ class Fraction {
 			denominator = n;
 		}
 
-		void print() {
+		void print() const {
 			cout << this -> numerator << " / " << this -> denominator << endl;
 		}
 
