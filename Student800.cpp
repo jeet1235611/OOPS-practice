@@ -5,6 +5,10 @@ class Student {
 
 	static int totalStudents; //total number of student.
 
+	Student() {
+		totalStudents++;
+	}
+
 };
 
 int Student :: totalStudents = 0; //initialize static data members.
