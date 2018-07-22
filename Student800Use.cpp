@@ -10,5 +10,6 @@ int main() {
 	cout << s1.rollNumber << " " << s1.age << endl;
 	*/
 
-	cout << Student :: totalStudents << endl;
+	//cout << Student :: totalStudents << endl;
+	cout << Student :: getTotalStudent() << endl;
 }
