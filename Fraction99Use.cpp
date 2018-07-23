@@ -21,6 +21,11 @@ int main() {
 	
 	Fraction f3 = f1.add(f2);
 	Fraction f4 = f1 + f2;
+	//Fraction f10 = f1.divide(f2);
+	f1.divide(f2);
+	cout << endl << endl;
+	f1.print();
+	cout << endl << endl;
 	f1.print();
 	f2.print();
 	f3.print();

@@ -122,6 +122,14 @@ class Fraction {
 			return fNew;
 		}*/
 
+		void divide(Fraction const &f2){
+			numerator = this -> numerator * f2.denominator;
+			denominator = this -> denominator * f2.numerator;
+			
+		
+			simplify();
+		}
+
 		void multiply(Fraction const &f2) {
 			numerator = numerator * f2.numerator;
 			denominator = denominator * f2.denominator;
