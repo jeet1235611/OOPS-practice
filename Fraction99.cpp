@@ -122,7 +122,7 @@ class Fraction {
 			return fNew;
 		}*/
 
-		void multiply(Fraction const &f2){
+		void multiply(Fraction const &f2) {
 			numerator = numerator * f2.numerator;
 			denominator = denominator * f2.denominator;
 
@@ -137,11 +137,12 @@ class Fraction {
 			return fNew;
 		}
 
-		bool operator==(Fraction const &f2){
-			if(numerator == f2.numerator && denominator == f2.denominator)
+		bool operator==(Fraction const &f2) const {
+		/*	if(numerator == f2.numerator && denominator == f2.denominator)
 				return true;
 			else
 				return false;
-			
+		*/
+			return (numerator == f2.numerator && denominator == f2.denominator);	
 		}
 };
