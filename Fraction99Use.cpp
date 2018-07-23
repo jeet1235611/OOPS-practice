@@ -20,4 +20,12 @@ int main() {
 	f2.print();
 	f3.print();
 	f4.print();
+
+	Fraction f5 = f1 - f2;
+	Fraction f6 = f1 * f2;
+	Fraction f7 = f1 / f2;
+
+	f5.print();
+	f6.print();
+	f7.print();
 }
