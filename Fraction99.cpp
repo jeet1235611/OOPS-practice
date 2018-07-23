@@ -62,6 +62,20 @@ class Fraction {
 			return fNew;
 		}
 
+		Fraction operator+(Fraction const &f2) {
+			int lcm = denominator * f2.denominator;
+			int x = lcm / denominator;
+			int y = lcm / f2.denominator;
+
+			int num = x * numerator + (y * f2.numerator);
+
+			//numerator = num;
+			//denominator = lcm;
+			//simplify();
+			Fraction fNew = Fraction(num, lcm);
+			fNew.simplify();
+			return fNew;
+		}
 		void multiply(Fraction const &f2){
 			numerator = numerator * f2.numerator;
 			denominator = denominator * f2.denominator;
