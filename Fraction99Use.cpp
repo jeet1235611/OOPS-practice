@@ -7,6 +7,11 @@ int main() {
 	Fraction f1(10, 2);
 	Fraction f2(15, 4);
 
+	if(f1 == f2)
+		cout << "Equal" << endl;
+	else
+		cout << " NOT Equal" << endl;
+
 	/*Fraction const f3;
 
 	cout << f3.getNumerator() << " " << f3.getDenominator() << endl;
@@ -24,6 +29,7 @@ int main() {
 	Fraction f5 = f1 - f2;
 	Fraction f6 = f1 * f2;
 	Fraction f7 = f1 / f2;
+	f1 == f2;
 
 	f5.print();
 	f6.print();
