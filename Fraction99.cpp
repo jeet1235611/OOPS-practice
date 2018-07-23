@@ -92,8 +92,16 @@ class Fraction {
 			return fNew;
 		}
 
-		Fraction operator/(Fraction const &f2) {
-			int lcm = denominator * f2.denominator;
+		Fraction operator/(Fraction const &f2) const{
+			int n = numerator * f2.denominator;
+			int d = denominator * f2.numerator;
+
+			Fraction fNew(n, d);
+                        fNew.simplify(); 
+			return fNew;
+
+			/*
+
 			int x = lcm / denominator;
 			int y = lcm / f2.denominator;
 
@@ -105,6 +113,8 @@ class Fraction {
 			Fraction fNew = Fraction(num, lcm);
 			fNew.simplify();
 			return fNew;
+			*/
+
 		}
 		/*
 		Fraction operator*(Fraction const &f2) {
