@@ -130,6 +130,17 @@ class Fraction {
 			simplify();
 		}
 
+		void minus(Fraction const &f2) {
+			int lcm = denominator * f2.denominator;
+			int x = lcm/denominator;
+			int y = lcm/f2.denominator;
+
+			numerator = (x*numerator - y*f2.numerator);
+			denominator = lcm;
+
+			simplify();
+		}
+
 		void multiply(Fraction const &f2) {
 			numerator = numerator * f2.numerator;
 			denominator = denominator * f2.denominator;
