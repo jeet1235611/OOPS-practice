@@ -10,5 +10,27 @@ int main() {
 	obj.add(49);
 	obj.add(50);
 
+	obj.add(50);
+	obj.add(50);
+	obj.add(50);
+	obj.add(50);
+	obj.add(50);
+	obj.add(50);
+	obj.add(50);
+	obj.add(50);
+	obj.add(50);
+	obj.add(50);
+	obj.add(50);
+	obj.add(50);
+	obj.add(50);
+	obj.add(50);
+	obj.add(50);
+	obj.add(50);
+	obj.add(50);
+	obj.add(50);
+	obj.add(50);
+	obj.add(50);
+	obj.add(50);
+
 	obj.print();
 }
