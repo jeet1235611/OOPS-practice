@@ -118,9 +118,10 @@ class Fraction {
 		}
 		
 		//Preincrement operator.
-		void operator++() {
+		Fraction operator++() {
 			numerator = numerator + denominator;
 			simplify();
+			return *this;
 		}
 		/*
 		Fraction operator*(Fraction const &f2) {

@@ -10,6 +10,11 @@ int main() {
 	f1.print();
 	++f1;
 	f1.print();
+
+	Fraction f3 = ++f1;
+	f3.print();
+
+
 	//Fraction f3 = f1 / f2;
 	//f3.print();
 	//return 0;
