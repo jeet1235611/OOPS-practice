@@ -6,9 +6,13 @@ using namespace std;
 int main() {
 	Fraction f1(10, 2);
 	Fraction f2(15, 4);
-	Fraction f3 = f1 / f2;
-	f3.print();
-	return 0;
+
+	f1.print();
+	f1++;
+	f1.print();
+	//Fraction f3 = f1 / f2;
+	//f3.print();
+	//return 0;
 	/*
 	f1.minus(f2);
 	cout << "For minus, the values are: " ;

@@ -116,6 +116,11 @@ class Fraction {
 			*/
 
 		}
+
+		void operator++(int) {
+			numerator = numerator + denominator;
+			simplify();
+		}
 		/*
 		Fraction operator*(Fraction const &f2) {
 			int lcm = denominator * f2.denominator;
