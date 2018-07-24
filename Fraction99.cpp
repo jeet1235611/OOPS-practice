@@ -116,8 +116,9 @@ class Fraction {
 			*/
 
 		}
-
-		void operator++(int) {
+		
+		//Preincrement operator.
+		void operator++() {
 			numerator = numerator + denominator;
 			simplify();
 		}
