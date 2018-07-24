@@ -118,7 +118,7 @@ class Fraction {
 		}
 		
 		//Preincrement operator.
-		Fraction operator++() {
+		Fraction& operator++() {
 			numerator = numerator + denominator;
 			simplify();
 			return *this;
