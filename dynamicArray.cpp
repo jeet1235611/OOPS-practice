@@ -11,16 +11,17 @@ class DynamicArray {
 		capacity = 5;
 	}
 	
-	int *newData;
+	//int *newData;
 	void add(int element) {
 		if(nextIndex == capacity) {
-			newData = new int[2*capacity];
-			capacity = 2*capacity;
+			int *newData = new int[2*capacity];
+			//capacity = 2*capacity;
 			for(int i = 0; i < capacity; i++){
 				newData[i] = data[i]; 
 			}
 			data = newData;
-			delete(newData);
+			delete [] newData;
+			capacity = 2*capacity;
 		}
 		data[nextIndex] = element;
 		nextIndex++;
