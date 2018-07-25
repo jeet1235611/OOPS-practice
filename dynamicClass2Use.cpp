@@ -36,12 +36,14 @@ int main() {
 
 	d3 = d1;
 
+	//d1.add(0, 100);
+
+	//d2.print();
+
+	//d1.print();
+
+	//cout << "d3 is: " << endl;
 	d1.add(0, 100);
-
 	d2.print();
-
-	d1.print();
-
-	cout << "d3 is: " << endl;
 	d3.print();
 }

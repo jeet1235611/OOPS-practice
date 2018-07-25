@@ -41,6 +41,35 @@ class DynamicArray {
 		}
 	}
 
+	//Khud ka copy constructor banana hoga.
+	
+	DynamicArray(DynamicArray const &d) {
+		//shallow copy ke case mein.
+		/*
+		this -> data = d.data;
+		this -> nextIndex = d.nextIndex;
+		this -> capacity = d.capacity;
+		*/
+		//Kuch is tarah kaam karta h hamara internal copy constructor.
+		//Deep copy.
+		this -> data = new int[d.capacity];
+		for(int i = 0; i < d.nextIndex; i++){
+			this -> data[i] = d.data[i];
+		}
+
+		this -> nextIndex = d.nextIndex;
+		this -> capacity = d.capacity;
+	}
+
+	void operator=(DynamicArray const &d) {
+		this -> data = new int[d.capacity];
+		for(int i = 0; i < d.nextIndex; i++) {
+			this -> data[i] = d.data[i];
+		}
+		this -> nextIndex = d.nextIndex;
+		this -> capacity = d.capacity;
+	}
+
 	/*
 	void display() {
 		for(int i = 0; i < nextIndex; i++){
