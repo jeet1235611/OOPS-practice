@@ -6,13 +6,13 @@ using namespace std;
 int main() {
 	Vehicle v;
 
-	v.color = "Blue";
+	//v.color = "Blue";
 	//v.maxSpeed = 100;
 	//v.numTyres = 4;
 
 	Car c;
-	c.color = "Black";
+	//c.color = "Black";
 	//c.numTyres = 4;
-	c.numGears = 5;
+	//c.numGears = 5;
 }
 
