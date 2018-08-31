@@ -1,3 +1,4 @@
+
 class Vehicle {
 	private:
 		int maxSpeed;
@@ -7,7 +8,16 @@ class Vehicle {
 
 	public:
 		string color;
+
+	Vehicle() {
+		cout << "Vehicle's default constructor is called" << endl;
+	}
+
+	~Vehicle() {
+		cout << "Vehicle's Destructor is called" << endl;
+	}
 };
+/*
 class Car: public Vehicle {
 	public:
 		int numGears;
@@ -20,3 +30,4 @@ class Car: public Vehicle {
 		}
 
 };
+*/

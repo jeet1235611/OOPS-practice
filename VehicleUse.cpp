@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 #include "Vehicle.cpp"
+#include "Car.cpp"
 
 int main() {
 	Vehicle v;
@@ -14,3 +15,4 @@ int main() {
 	//c.numTyres = 4;
 	c.numGears = 5;
 }
+
