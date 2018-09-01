@@ -10,7 +10,7 @@ int main() {
 	//v.maxSpeed = 100;
 	//v.numTyres = 4;
 
-	Car c;
+	Car c(50);
 	//c.color = "Black";
 	//c.numTyres = 4;
 	//c.numGears = 5;

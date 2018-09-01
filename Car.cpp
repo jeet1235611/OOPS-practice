@@ -2,7 +2,7 @@ class Car: public Vehicle {
         public:
                 int numGears;
 
-		Car() : Vehicle(5)  {
+		Car(int x) : Vehicle(x)  {
 			cout << "Car's default constructor is called!" << endl;
 		}
 
