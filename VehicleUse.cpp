@@ -2,6 +2,7 @@
 using namespace std;
 #include "Vehicle.cpp"
 #include "Car.cpp"
+#include "HondaCity.cpp"
 
 int main() {
 //	Vehicle v;
@@ -10,9 +11,11 @@ int main() {
 	//v.maxSpeed = 100;
 	//v.numTyres = 4;
 
-	Car c(50);
+	//Car c(50);
 	//c.color = "Black";
 	//c.numTyres = 4;
 	//c.numGears = 5;
+	
+	HondaCity h(4, 5);
 }
 
