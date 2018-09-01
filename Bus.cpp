@@ -4,4 +4,7 @@ class Bus : public Car, public Truck {
 	Bus() {
 		cout << "Bus's constructor " << endl;
 	}
+	~Bus() {
+		cout << "Bus's destructor is called! " << endl;
+	}
 };
