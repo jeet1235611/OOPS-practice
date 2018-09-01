@@ -12,11 +12,11 @@ class Vehicle {
 	void print() {
 		cout << "Vehicle wali cheezzz!! " << endl;
 	}	
-/*	
+	
 	Vehicle() {
 		cout << "Vehicle's default constructor is called" << endl;
 	}
-*/	
+
 	
 
 	Vehicle(int z) {
