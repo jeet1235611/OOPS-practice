@@ -1,7 +1,7 @@
-class Truck : public Vehicle {
+class Truck : virtual public Vehicle {
 	public:
 
-	Truck() {
+	Truck() : Vehicle(4) {
 		cout << "Truck's constructor " << endl;
 
 	}	

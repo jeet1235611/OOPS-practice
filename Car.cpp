@@ -1,8 +1,8 @@
-class Car: public Vehicle {
+class Car: virtual public Vehicle {
         public:
                 int numGears;
 
-		Car() {
+		Car() : Vehicle(3) {
 			cout << "Car's constructor is called!" << endl;
 		}
 
