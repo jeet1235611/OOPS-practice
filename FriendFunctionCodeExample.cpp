@@ -6,6 +6,8 @@ class Bus {
 		void print();
 };
 
+void test();
+
 class Truck {
 	private:
 		int x;
@@ -17,6 +19,8 @@ class Truck {
 		int z;
 
 	friend void Bus :: print();
+
+	friend void test();
 };
 
 void Bus :: print() {
@@ -26,7 +30,18 @@ void Bus :: print() {
 	cout << t.x << " " << t.y << endl;
 }
 
+void test() {
+	//Access truck private.
+	Truck t;
+	t.x = 10;
+	t.y = 20;
+	cout << t.x << " " << t.y << endl;
+}
+
 int main() {
+
 	Bus b;
 	b.print();
+	test();
+
 }
