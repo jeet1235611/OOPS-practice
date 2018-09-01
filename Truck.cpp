@@ -9,4 +9,8 @@ class Truck : public Vehicle {
 	~Truck() {
 		cout << "Truck's destructor is called! " << endl;
 	}
+
+	void print() {
+		cout << "Truck wali cheezzz!! " << endl;
+	}
 };

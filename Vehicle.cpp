@@ -9,7 +9,9 @@ class Vehicle {
 	public:
 		string color;
 
-		
+	void print() {
+		cout << "Vehicle wali cheezzz!! " << endl;
+	}	
 	Vehicle() {
 		cout << "Vehicle's default constructor is called" << endl;
 	}

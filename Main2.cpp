@@ -7,4 +7,5 @@ using namespace std;
 
 int main() {
 	Bus b;
+	b.Truck :: print();
 }
