@@ -4,7 +4,7 @@ using namespace std;
 #include "Car.cpp"
 
 int main() {
-	Vehicle v;
+//	Vehicle v;
 
 	//v.color = "Blue";
 	//v.maxSpeed = 100;

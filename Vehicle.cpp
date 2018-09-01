@@ -9,13 +9,16 @@ class Vehicle {
 	public:
 		string color;
 
+		/*
 	Vehicle() {
 		cout << "Vehicle's default constructor is called" << endl;
 	}
+	*/
 
 	Vehicle(int z) {
-		cout << "Vehicle's Paramerzed constructor " << endl;
 		maxSpeed = z;
+		cout << "Vehicle's Paramerzed constructor " << endl;
+		//maxSpeed = z;
 	}
 
 	~Vehicle() {
