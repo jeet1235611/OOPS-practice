@@ -7,4 +7,8 @@ class Bus : public Car, public Truck {
 	~Bus() {
 		cout << "Bus's destructor is called! " << endl;
 	}
+
+	void print() {
+		cout << "Bus class ko print" << endl;
+	}
 };
